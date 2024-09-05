@@ -15,6 +15,10 @@ use OCP\DB\Types;
 use OCP\Migration\IOutput;
 use OCP\Migration\SimpleMigrationStep;
 
+/**
+ * Create a new column to store whether a reminder was sent to the user about an expiring share
+ * @see \OCA\Files_Sharing\SharesReminderJob
+ */
 class Version31000Date20240821142813 extends SimpleMigrationStep {
 
 	/**
